@@ -56,107 +56,37 @@ p {
     box-shadow: 5px 5px 10px 5px black;
 }
 #card1 {
-    animation: postit1 1s;
-}
-@keyframes postit1 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
+    animation: postit 1s;
 }
 #card7 {
-    animation: postit7 1.5s;
+    animation: postit 1.5s;
 }
-@keyframes postit7 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 #card4 {
-    animation: postit4 2s;
+    animation: postit 2s;
 }
-@keyframes postit4 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 #card5 {
-    animation: postit5 2.5s;
+    animation: postit 2.5s;
 }
-@keyframes postit5 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 #card2 {
-    animation: postit2 3s;
+    animation: postit 3s;
 }
-@keyframes postit2 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 #card8 {
-    animation: postit8 3.5s;
+    animation: postit 3.5s;
 }
-@keyframes postit8 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 #card3 {
-    animation: postit3 4s;
+    animation: postit 4s;
 }
-@keyframes postit3 {
-    0% {
-        visibility: hidden;
-    }
-    90% {
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 #card6 {
-    animation: postit6 4.5s;
+    animation: postit 4.5s;
 }
-@keyframes postit6 {
+
+@keyframes postit {
     0% {
         visibility: hidden;
     }
@@ -166,5 +96,9 @@ p {
     100%{
         visibility: visible;
     }
+}
+
+.barred {
+    text-decoration: line-through;
 }
 
