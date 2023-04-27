@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      body {
+        margin: 15px;
+        padding: 15px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box div {
+        width: 60%;
+        margin: auto;
+      }
+      .ex-1 {
+        background-color: red;
+        color: white;
+        /* indichiamo qua la proprietà transition */
+        /* transition: proprietà durata curva di accellerazione / ritardo */
+        /* possibile usare proprietà all per selezionare tutte le proprietà*/
+        /* curva di accellerazione: ease (default), linear, ease-in, ease-out, ease-in-out */
+        transition: width 2s 0.5s;
+      }
+      .ex-1:hover {
+        width: 500px;
+      }
+      .ex-2 {
+        background-color: purple;
+        color: white;
+        transition: all 3s;
+      }
+      .ex-2:hover {
+        width: 500px;
+        background-color: yellow;
+        color: black;
+      }
+      .ex-3 {
+        background-color: blue;
+        color: white;
+        transition: all 3s;
+        position: relative;
+        left: 300px;
+      }
+      .ex-3:hover {
+        transform: rotate(-360deg) scale(2);
+        border-radius: 180px;
+        background-color: rgb(0, 132, 255);
+        box-shadow: 2px 2px 20px 5px rgb(0, 174, 255);
+      }
+      /*Se aggiungo una transition aggiuntiva sull'HOVER, questa verrà applicata in ENTRATA, mentre quella sull'elemento senza HOVER verrà applicata in USCITA */
+    </style>
+  </head>
+  <body>
+    <h1>PROPRIETà TRANSITION</h1>
+    <h2>BOX CHE SI ALLUNGA ON HOVER</h2>
+    <div class="box ex-1"><div>MI ALLUNGO</div></div>
+    <h2>BOX CHE SI ALLUNGA E CAMBIA COLORE ON HOVER</h2>
+    <div class="box ex-2"><div>MI ALLUNGO E CAMBIO COLORE</div></div>
+    <h2>BOX CHE RUOTA E SI INGRANDISCE</h2>
+    <div class="box ex-3"><div>RUOTO, MI INGRANDISCO, CAMBIO FORMA E MI ILLUMINO</div></div>
+  </body>
+</html>
