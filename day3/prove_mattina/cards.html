@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epicode Cards</title>
+    <style>
+        html, 
+        body { 
+            height: 100%;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        h2 {
+            margin: 0;
+        }
+        #cards article {
+            width: 200px;
+            border: solid 1px black;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: rgb(82, 82, 82);
+            color: white;
+            transition: all 200ms linear;
+        }
+        #cards {
+            display: flex;
+        }
+        #container {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        #card1 {
+            transform: rotate(-15deg) translate(30px, 50px);
+            z-index: 1;
+        }
+        #card2 {
+            z-index: 2;
+        }
+        #card3 {
+            transform: rotate(15deg) translate(-30px, 50px);
+            z-index: 3;
+        }
+        #cards article:hover {
+            z-index: 4;
+            background-color: goldenrod !important;
+            color: black;
+            transform: scale(1.3);
+        }
+    </style>
+  </head>
+  <body>
+    <main id="container">
+      <div id="cards">
+        <article id="card1">
+          <h2>Card1</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+            distinctio, commodi autem alias optio obcaecati architecto quidem
+            labore ducimus repudiandae ut animi mollitia in ipsam doloremque
+            dolorem laudantium sint rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+            distinctio, commodi autem alias optio obcaecati architecto quidem
+            labore ducimus repudiandae ut animi mollitia in ipsam doloremque
+            dolorem laudantium sint rerum.
+          </p>
+        </article>
+        <article id="card2">
+            <h2>Card2</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+              distinctio, commodi autem alias optio obcaecati architecto quidem
+              labore ducimus repudiandae ut animi mollitia in ipsam doloremque
+              dolorem laudantium sint rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+              distinctio, commodi autem alias optio obcaecati architecto quidem
+              labore ducimus repudiandae ut animi mollitia in ipsam doloremque
+              dolorem laudantium sint rerum.
+            </p>
+          </article>
+          <article id="card3">
+            <h2>Card3</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+              distinctio, commodi autem alias optio obcaecati architecto quidem
+              labore ducimus repudiandae ut animi mollitia in ipsam doloremque
+              dolorem laudantium sint rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+              distinctio, commodi autem alias optio obcaecati architecto quidem
+              labore ducimus repudiandae ut animi mollitia in ipsam doloremque
+              dolorem laudantium sint rerum.
+            </p>
+          </article>
+      </div>
+    </main>
+    <script>
+        let articleReferenceArray = document.getElementsByTagName('article');
+        for (let i = 0; i < articleReferenceArray.length; i++) {
+        articleReferenceArray[i].style.backgroundColor = '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0');
+        }
+        let pageColor = document.getElementById('container');
+        pageColor.style.backgroundColor = '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0');
+    </script>
+  </body>
+</html>

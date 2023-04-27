@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Indie Flower', cursive;
+}
+#cards article {
+    width: 20%;
+    height: 230px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px 1px black;
+    transition: all 0.4s ease-in-out;
+}
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    background-color: #666666;
+}
+#container {
+    display: flex;
+    height: 100%;
+    align-items: center;    
+}
+#card1, #card5, #card7 {
+    background-image: linear-gradient(#FFFFCF 80%, #A2A38F 100%);
+    transform: rotate(-3deg);
+}
+#card2, #card4, #card8 { 
+    background-image: linear-gradient(#CBFDCD 80%, #9EB5A1 100%);
+    transform: rotate(5deg);
+}
+
+#card3, #card6 {
+    background-image: linear-gradient(#C2C3EC 80%, #8B8C9B 100%);
+    transform: rotate(-7deg);
+}
+h4 {
+    font-size: 1.7em;
+    font-weight: 700;
+    padding: 10px;
+}
+p {
+    font-size: 1.1em;
+}
+#cards article:hover {
+    z-index: 1;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px 5px black;
+}
+#card1 {
+    animation: postit1 1s;
+}
+@keyframes postit1 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card7 {
+    animation: postit7 1.5s;
+}
+@keyframes postit7 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card4 {
+    animation: postit4 2s;
+}
+@keyframes postit4 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card5 {
+    animation: postit5 2.5s;
+}
+@keyframes postit5 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card2 {
+    animation: postit2 3s;
+}
+@keyframes postit2 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card8 {
+    animation: postit8 3.5s;
+}
+@keyframes postit8 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card3 {
+    animation: postit3 4s;
+}
+@keyframes postit3 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+#card6 {
+    animation: postit6 4.5s;
+}
+@keyframes postit6 {
+    0% {
+        visibility: hidden;
+    }
+    90% {
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
