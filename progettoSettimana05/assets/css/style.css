@@ -53,6 +53,9 @@ nav {
     align-items: center;
     padding: 0.2em;
 }
+nav img {
+    cursor: pointer;
+}
 ul {
     display: flex;
     list-style-type: none;
@@ -80,6 +83,7 @@ li button {
     color: white;
     border-radius: 30px;
     transition: background-color 1s;
+    cursor: pointer;
 }
 a {
     text-decoration: none;
@@ -104,6 +108,7 @@ h3 + button {
     color: white;
     font-size: 1.2em;
     border-radius: 30px;
+    cursor: pointer;
 }
 .invisible {
     opacity: 0;
@@ -151,22 +156,28 @@ h4 {
     height: 25px;
     border-radius: 90px;
     margin-right: 0.5em;
+    cursor: pointer;
 }
 .trendingImage + p {
     font-size: 0.8em;
     font-weight: 600;
     width: 80%;
+    cursor: pointer;
 }
 h5 {
     margin: 0;
     width: 80%;
     font-weight: bold;
     font-size: 0.9em;
+    cursor: pointer;
 }
 .readingTime {
     padding-bottom: 4em;
     font-size: 0.8em;
     color: gray
+}
+.readingTime img {
+    cursor: pointer;
 }
 #section1 {
     border-bottom: 1px solid lightgray;
@@ -191,6 +202,7 @@ h5 {
 .articleImage img {
     width: 200px;
     height: 150px;
+    cursor: pointer;
 }
 .articleInfo {
     flex-basis: 75%;
@@ -208,6 +220,7 @@ p:nth-of-type(3) {
     background-color: lightgray;
     padding: 0.4em 0.6em;
     border-radius: 30px;
+    cursor: pointer;
 }
 .articleFooter {
     justify-content: space-between;
@@ -220,18 +233,24 @@ p:nth-of-type(3) {
 .footerInfo p {
     margin-top: 0.5em;
 }
+.footerInfo img {
+    cursor: pointer;
+}
 h2 {
     margin: 0;
     font-size: 1.3em;
     font-weight: 700;
+    cursor: pointer;
 }
 h2+p {
     margin-top: 8px;
     margin-bottom: 0;
     color: gray;
+    cursor: pointer;
 }
 .articleFooter img {
     padding-right: 2em;
+    cursor: pointer;
 }
 
 /*discover section*/
@@ -241,6 +260,7 @@ h2+p {
     padding: 0.5em 1em;
     margin: 0.5em 0.1em 0.5em 0;
     color: gray;
+    cursor: pointer;
 }
 #discoverMore {
     padding-left: 3em;
@@ -259,6 +279,7 @@ h2+p {
 #finalList ul li {
     padding: 0 1.5em 1em 0;
     color: gray;
+    cursor: pointer;
 
 }
 #finalList {
