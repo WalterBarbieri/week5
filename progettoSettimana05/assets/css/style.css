@@ -32,7 +32,7 @@ button {
     font-family: 'Roboto', sans-serif;
 }
 nav, #trendingContainer, #section2 {
-    width: 62%;
+    width: 62.5%;
     margin: auto;
 }
 header {
@@ -45,6 +45,7 @@ header {
     z-index: 1;
     width: 100%;
     background-color: #ffc017;
+    transition: background-color 1s;
 }
 nav {
     display: flex;
@@ -65,7 +66,7 @@ ul {
 }
 
 #hero {
-    margin-left: 19%;
+    margin-left: 18.5%;
     display: flex;
     position: relative;
     height: 100%;
@@ -78,6 +79,7 @@ li button {
     background-color: #191919;
     color: white;
     border-radius: 30px;
+    transition: background-color 1s;
 }
 a {
     text-decoration: none;
@@ -96,7 +98,7 @@ a {
     top: 0;
 }
 
-div > button {
+h3 + button {
     padding: 0.5em 3em;
     background-color: #191919;
     color: white;
@@ -132,7 +134,7 @@ div > button {
 }
 h4 {
     flex-grow: 1;
-    margin-top: 0.3em;
+    margin: 0;
     font-size: 2em;
     color: lightgray;
 }
@@ -168,12 +170,14 @@ h5 {
 }
 #section1 {
     border-bottom: 1px solid lightgray;
+    margin-bottom: 5em;
 }
 
 /*article section*/
 
 .article {
     display: flex;
+    margin-bottom: 3em;
 }
 #section2 {
     display: flex;
@@ -183,4 +187,82 @@ h5 {
 }
 #discoverMore {
     flex-basis: 40%;
+}
+.articleImage img {
+    width: 200px;
+    height: 150px;
+}
+.articleInfo {
+    flex-basis: 75%;
+}
+.articleImage {
+    flex-basis: 25%;
+}
+.articleHeader {
+    align-items: center;
+}
+.articleInfo div {
+    display: flex;
+}
+p:nth-of-type(3) {
+    background-color: lightgray;
+    padding: 0.4em 0.6em;
+    border-radius: 30px;
+}
+.articleFooter {
+    justify-content: space-between;
+}
+.footerInfo {
+    align-items: center;
+    font-size: 0.8em;
+    color: gray;
+}
+.footerInfo p {
+    margin-top: 0.5em;
+}
+h2 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+h2+p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: gray;
+}
+.articleFooter img {
+    padding-right: 2em;
+}
+
+/*discover section*/
+.discoverBtn {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 0.5em 1em;
+    margin: 0.5em 0.1em 0.5em 0;
+    color: gray;
+}
+#discoverMore {
+    padding-left: 3em;
+    position: sticky;
+    top: 4.8em;
+    align-self: flex-start;
+}
+#discoverMore p {
+    font-weight: 700;
+    font-size: 0.9em;
+}
+#finalList ul {
+    flex-wrap: wrap;
+    padding: 0;
+}
+#finalList ul li {
+    padding: 0 1.5em 1em 0;
+    color: gray;
+
+}
+#finalList {
+    border-top: 1px solid lightgray;
+    font-size: 0.9em;
+    margin-top: 2em;
 }

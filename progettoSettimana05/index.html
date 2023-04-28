@@ -11,14 +11,14 @@
     <header>
       <div id="navContainer">
         <nav>
-          <img src="./assets/imgs/svg/logo.svg" alt="Medium Logo">
+          <img src="./assets/imgs/svg/logo.svg" alt="Medium Logo" />
           <div>
             <ul>
               <li><a href="#">Our Story</a></li>
               <li><a href="#">Membership</a></li>
               <li><a href="#">Write</a></li>
               <li><a href="#">Sign In</a></li>
-              <li><button type="button">Get Started</button></li>
+              <li><button type="button" id="btnChange">Get Started</button></li>
             </ul>
           </div>
         </nav>
@@ -9241,145 +9241,349 @@
       </div>
     </header>
     <main>
-        <div id="section1">
-            <div id="trendingContainer">
-                <div id="trendingTitle">
-                    <img src="./assets/imgs/svg/trending.svg" alt="logo trending">
-                    <p>Trending on medium </p>
+      <div id="section1">
+        <div id="trendingContainer">
+          <div id="trendingTitle">
+            <img src="./assets/imgs/svg/trending.svg" alt="logo trending" />
+            <p>Trending on medium</p>
+          </div>
+          <div id="trending">
+            <div>
+              <h4>01</h4>
+              <div class="trendingCard">
+                <div>
+                  <img class="trendingImage" src="./assets/imgs/image01.jpeg" />
+                  <p>Tom Cooper</p>
                 </div>
-                <div id="trending">
-                    <div> 
-                        <h4>01</h4>
-                        <div class="trendingCard">
-                            <div>
-                                <img class="trendingImage" src="./assets/imgs/image01.jpeg">
-                                <p>Tom Cooper</p>
-                            </div>
-                            <div> 
-                                <h5>Ukraine War, 23 October 2022 </h5>
-                            </div>
-                            <div class="readingTime">
-                                <p>Oct 23·5 min read</p>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div>
-                        <h4>02</h4>
-                        <div class="trendingCard"> 
-                            <div>
-                                <img class="trendingImage" src="./assets/imgs/image02.png">
-                                <p>Arthur Hayes in Entrepreneur's Handbook</p>
-                            </div>
-                            <div>
-                                <h5>Comeback </h5>
-                            </div>
-                            <div class="readingTime">
-                                <p>Oct 26·24 min read</p> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4>03</h4>
-                        <div class="trendingCard">
-                            <div>
-                                <img class="trendingImage" src="./assets/imgs/image03.jpeg">
-                                <p>Erin A Ross in Slackjaw</p>
-                            </div>
-                            <div>
-                                <h5>How I Learned to Love My Breasts Even Though One Is A Horcrux For Voldemort </h5>
-                            </div>
-                            <div class="readingTime">
-                                <p>Oct 26·2 min read </p>
-                            </div>
-                        </div>    
-                    </div>
-
-                    <div>
-                        <h4>04</h4>
-                        <div class="trendingCard">
-                            <div>
-                                <img class="trendingImage" src="./assets/imgs/image04.png">
-                                <p>Frank Mastropolo in The Riffk</p>
-                            </div>
-                            <div>
-                                <h5>The Night Paul McCartney Donned a Disguise at Fillmore East </h5>
-                            </div>
-                            <div class="readingTime">
-                                <p>Oct 22·3 min read</p>
-                                <img src="./assets/imgs/svg/star.svg" alt="star">
-                            </div>
-                        </div>     
-                    </div>
-
-                    <div>
-                        <h4>05</h4>
-                        <div class="trendingCard">
-                            <div>
-                                <img class="trendingImage" src="./assets/imgs/image05.jpeg">
-                                <p>Frank Andrade in Towards Data Science</p>
-                            </div>
-                            <div>
-                                <h5>5 Python Projects to Automate Your Life: From Beginner to Advanced </h5>
-                            </div>
-                            <div class="readingTime">
-                                <p>Oct 13·6 min read</p>
-                                <img src="./assets/imgs/svg/star.svg" alt="star">
-                            </div>
-                        </div>     
-                    </div>
-                    <div>
-                        <h4>06</h4>
-                        <div class="trendingCard">
-                            <div>
-                                <img class="trendingImage" src="./assets/imgs/image06.png">
-                                <p>Wesley Smits in JavaScript in Plain English</p>
-                            </div>
-                            <div>
-                                <h5>How To Make Visual Studio Code Look Amazing</h5>
-                            </div>
-                            <div class="readingTime">
-                                <p>Oct 20·7 min read</p>
-                                <img src="./assets/imgs/svg/star.svg" alt="star">
-                            </div>
-                        </div>    
-                    </div>
+                <div>
+                  <h5>Ukraine War, 23 October 2022</h5>
                 </div>
+                <div class="readingTime">
+                  <p>Oct 23·5 min read</p>
+                </div>
+              </div>
             </div>
+
+            <div>
+              <h4>02</h4>
+              <div class="trendingCard">
+                <div>
+                  <img class="trendingImage" src="./assets/imgs/image02.png" />
+                  <p>Arthur Hayes in Entrepreneur's Handbook</p>
+                </div>
+                <div>
+                  <h5>Comeback</h5>
+                </div>
+                <div class="readingTime">
+                  <p>Oct 26·24 min read</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4>03</h4>
+              <div class="trendingCard">
+                <div>
+                  <img class="trendingImage" src="./assets/imgs/image03.jpeg" />
+                  <p>Erin A Ross in Slackjaw</p>
+                </div>
+                <div>
+                  <h5>
+                    How I Learned to Love My Breasts Even Though One Is A
+                    Horcrux For Voldemort
+                  </h5>
+                </div>
+                <div class="readingTime">
+                  <p>Oct 26·2 min read</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4>04</h4>
+              <div class="trendingCard">
+                <div>
+                  <img class="trendingImage" src="./assets/imgs/image04.png" />
+                  <p>Frank Mastropolo in The Riffk</p>
+                </div>
+                <div>
+                  <h5>
+                    The Night Paul McCartney Donned a Disguise at Fillmore East
+                  </h5>
+                </div>
+                <div class="readingTime">
+                  <p>Oct 22·3 min read</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4>05</h4>
+              <div class="trendingCard">
+                <div>
+                  <img class="trendingImage" src="./assets/imgs/image05.jpeg" />
+                  <p>Frank Andrade in Towards Data Science</p>
+                </div>
+                <div>
+                  <h5>
+                    5 Python Projects to Automate Your Life: From Beginner to
+                    Advanced
+                  </h5>
+                </div>
+                <div class="readingTime">
+                  <p>Oct 13·6 min read</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4>06</h4>
+              <div class="trendingCard">
+                <div>
+                  <img class="trendingImage" src="./assets/imgs/image06.png" />
+                  <p>Wesley Smits in JavaScript in Plain English</p>
+                </div>
+                <div>
+                  <h5>How To Make Visual Studio Code Look Amazing</h5>
+                </div>
+                <div class="readingTime">
+                  <p>Oct 20·7 min read</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="section2">
-            <div id="articleContainer">
-                <div class="article">
-                    <div class="articleInfo">
-                        <div>
-                            <img class="trendingImage" src="./assets/imgs/image07.jpeg">
-                            <p>Robert Roy Britt</p>
-                        </div>
-                        <h2>How Old is Old?</h2>
-                        <p>What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
-                        <div>
-                            <div>
-                                <p>Oct 27 ·</p> 
-                                <p>5 min read ·</p> 
-                                <p>Aging</p>
-                                <img src="./assets/imgs/svg/star.svg" alt="star logo">
-                            </div>
-                            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo">
-                        </div>
+      </div>
+      <div id="section2">
+        <div id="articleContainer">
 
-                    </div>
-                    <div class="articleImage">
-                        <img src="./assets/imgs/image08.jpeg" alt="picture of three woman of different generations">
-
-                    </div>
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image07.jpeg" />
+                <p>Robert Roy Britt</p>
+              </div>
+              <h2>How Old is Old?</h2>
+              <p>
+                What we consider “old” changes dramatically with age, and our
+                perspectives can be predictive of how well we age
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Oct 27 · &nbsp;</p>
+                  <p>5 min read · &nbsp;</p>
+                  <p>Aging</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star logo" />
                 </div>
-
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
             </div>
-            <div id="discoverMore">
-
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image08.jpeg"
+                alt="picture of three woman of different generations"
+              />
             </div>
+          </div>
+
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image09.jpeg" />
+                <p>Taru Anniina Liikanen</p>
+              </div>
+              <h2>Is Taylor Swift Allowed to Speak About Fat?</h2>
+              <p>
+                Can you speak about your trauma if you don't look traumatized?
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Oct 24 · &nbsp;</p>
+                  <p>6 min read · &nbsp;</p>
+                  <p>Health</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star logo" />
+                </div>
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
+            </div>
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image10.jpeg"
+                alt="picture of three woman of different generations"
+              />
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image11.jpeg" />
+                <p>David Rodenas, Ph. D.</p>
+              </div>
+              <h2>Don’t Screw Up, You Will Be Found Guilty</h2>
+              <p>
+                Software Engineer, yours is the right to produce high-quality work at all times, also the liability.
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Oct 15 · &nbsp;</p>
+                  <p>5 min read · &nbsp;</p>
+                  <p>Software Engineering </p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star logo" />
+                </div>
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
+            </div>
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image12.png"
+                alt="picture of three woman of different generations"
+              />
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image13.png" />
+                <p>Microsoft Design</p>
+              </div>
+              <h2>Leave No Trace</h2>
+              <p>
+                How product designers can break from the status quo and help our planet
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Oct 25 · &nbsp;</p>
+                  <p>7 min read · &nbsp;</p>
+                  <p>Sustainability</p>                  
+                </div>
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
+            </div>
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image14.png"
+                alt="picture of three woman of different generations"
+              />
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image15.jpeg" />
+                <p>Scott H. Young</p>
+              </div>
+              <h2>Variability, Not Repetition, is the Key to Mastery</h2>
+              <p>
+                Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the man who has practiced one kick 10,000...
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Oct 26 · &nbsp;</p>
+                  <p>7 min read · &nbsp;</p>
+                  <p>Health</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star logo" />
+                </div>
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
+            </div>
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image16.jpg"
+                alt="picture of three woman of different generations"
+              />
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image17.png" />
+                <p>Paul A. DeStefanoin Human Parts</p>
+              </div>
+              <h2>What I Overheard as an Escape Room Actor</h2>
+              <p>
+                Lock a group of people in a room and you’ll witness some surprising confessions
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Jan 18, 2020 · &nbsp;</p>
+                  <p>6 min read · &nbsp;</p>
+                  <p>Experiences</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="star logo" />
+                </div>
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
+            </div>
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image18.jpeg"
+                alt="picture of three woman of different generations"
+              />
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="articleInfo">
+              <div class="articleHeader">
+                <img class="trendingImage" src="./assets/imgs/image19.jpeg" />
+                <p>Kim Scott</p>
+              </div>
+              <h2>6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”</h2>
+              <p>
+                With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and…
+              </p>
+              <div class="articleFooter">
+                <div class="footerInfo">
+                  <p>Oct 24 · &nbsp;</p>
+                  <p>6 min read · &nbsp;</p>
+                  <p>Health</p>                  
+                </div>
+                <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark logo" />
+              </div>
+            </div>
+            <div class="articleImage">
+              <img
+                src="./assets/imgs/image20.jpg"
+                alt="picture of three woman of different generations"
+              />
+            </div>
+          </div>
+
         </div>
+        <div id="discoverMore">
+          <p>DISCOVER MORE OF WHAT MATTERS TO YOU</p>
+          <div>
+            <button type="button" class="discoverBtn">Programming</button>
+            <button type="button" class="discoverBtn">Data Science</button>
+            <button type="button" class="discoverBtn">Technology</button>
+            <button type="button" class="discoverBtn">Self Improvement</button>
+            <button type="button" class="discoverBtn">Writing</button>
+            <button type="button" class="discoverBtn">Relationships</button>
+            <button type="button" class="discoverBtn">Machine Learning</button>
+            <button type="button" class="discoverBtn">Productivity</button>
+            <button type="button" class="discoverBtn">Politics</button>
+          </div>
+          <div id="finalList">
+            <ul>
+              <li>Help</li>
+              <li>Status</li>
+              <li>Writers</li>
+              <li>Blog</li>
+              <li>Careers</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>About</li>
+              <li>Knowable</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
     </main>
     <script src="./assets/js/script.js"></script>
   </body>
