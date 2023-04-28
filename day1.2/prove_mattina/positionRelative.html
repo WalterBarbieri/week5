@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITION RELATIVE</title>
+    <style>
+      .static {
+        border: 3px solid red;
+        position: static;
+      }
+      .relative {
+        border: 3px solid blue;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Position: relative</h2>
+    <p>
+      un elemento con valore 'relative' è posizionato relativamente a quella che
+      sarebbe stata la sua posizione originale. Fuoriesce dal flow della pagina,
+      attenzione interazione margini e padding.
+    </p>
+    <div class="relative">Questo div è posizionato con position: relative</div>
+    <div class="static">Questo div è posizionato con position: static</div>
+  </body>
+</html>

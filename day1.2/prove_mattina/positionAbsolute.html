@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .static {
+        border: 3px solid red;
+        position: static;
+      }
+      .relative {
+        border: 3px solid blue;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .absolute {
+        border: 3px solid green;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+      }
+      .relativeBox{
+        border: 2px solid black;
+        position: relative;
+        width: 300px;
+        height: 300px;
+      }
+      #abs1 {
+        border: 2px solid purple;
+        position: absolute;
+        right: 0;
+
+      }
+      #abs2{
+        border: 2px solid orangered;
+        position: absolute;
+        bottom: 0;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Position: absolute</h2>
+    <p>
+      un elemento con valore 'absolute' è posizionato in base al suo genitore
+      più prossimo con position relative. QUalora questo genitore con position
+      relative non esista, l'elemento position absolute si ancorerà ai margini
+      del viewport. Fuoriesce dal flow della pagina, attenzione interazione
+      margini e padding.
+    </p>
+    <div class="absolute">Questo div è posizionato con position: absolute</div>
+    <div class="relative">Questo div è posizionato con position: relative</div>
+    <div class="static">Questo div è posizionato con position: static</div>
+
+    <div class="relativeBox">
+        <p id="abs1">Absolute1</p>
+        <p id="abs2">Absolute2</p>
+
+    </div>
+  </body>
+</html>
